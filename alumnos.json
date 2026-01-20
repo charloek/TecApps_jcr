@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hernandez Lopez Juan",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 2,
+    "nombre": "Garcia Martinez Ana",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 3,
+    "nombre": "Perez Rodriguez Luis",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 4,
+    "nombre": "Ramirez Sanchez Maria",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 5,
+    "nombre": "Torres Flores Carlos",
+    "escuela": "ICO"
+  },
+  {
+    "id": 6,
+    "nombre": "Vazquez Morales Laura",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 7,
+    "nombre": "Cruz Jimenez Miguel",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 8,
+    "nombre": "Ortega Ruiz Daniela",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 9,
+    "nombre": "Mendoza Alvarez Jorge",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 10,
+    "nombre": "Castillo Romero Fernanda",
+    "escuela": "ICO"
+  },
+  {
+    "id": 11,
+    "nombre": "Navarro Silva Ricardo",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 12,
+    "nombre": "Rojas Delgado Paola",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 13,
+    "nombre": "Ibarra Luna Diego",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 14,
+    "nombre": "Salas Cortes Alejandra",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 15,
+    "nombre": "Mejia Pineda Oscar",
+    "escuela": "ICO"
+  },
+  {
+    "id": 16,
+    "nombre": "Fuentes Cabrera Sofia",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 17,
+    "nombre": "Aguilar Soto Manuel",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 18,
+    "nombre": "Reyes Montoya Karla",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 19,
+    "nombre": "Lara Campos Ivan",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 20,
+    "nombre": "Padilla Rangel Brenda",
+    "escuela": "ICO"
+  },
+  {
+    "id": 21,
+    "nombre": "Escobar Nieto Andres",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 22,
+    "nombre": "Valdez Arias Monica",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 23,
+    "nombre": "Beltran Muñoz Cesar",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 24,
+    "nombre": "Pacheco Vargas Liliana",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 25,
+    "nombre": "Guzman Herrera Raul",
+    "escuela": "ICO"
+  },
+  {
+    "id": 26,
+    "nombre": "Rios Benitez Natalia",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 27,
+    "nombre": "Cervantes Leon Eduardo",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 28,
+    "nombre": "Zamora Ochoa Valeria",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 29,
+    "nombre": "Delgado Peñaloza Alberto",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 30,
+    "nombre": "Franco Cuevas Miriam",
+    "escuela": "ICO"
+  },
+  {
+    "id": 31,
+    "nombre": "Serrano Valenzuela Hugo",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 32,
+    "nombre": "Bautista Rosales Elena",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 33,
+    "nombre": "Montes Figueroa Pablo",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 34,
+    "nombre": "Castañeda Solis Irene",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 35,
+    "nombre": "Noriega Tapia Julian",
+    "escuela": "ICO"
+  },
+  {
+    "id": 36,
+    "nombre": "Palacios Quiroz Adriana",
+    "escuela": "UPSIN"
+  },
+  {
+    "id": 37,
+    "nombre": "Gallardo Medina Victor",
+    "escuela": "CONALEP"
+  },
+  {
+    "id": 38,
+    "nombre": "Coronado Acosta Jimena",
+    "escuela": "UADEO"
+  },
+  {
+    "id": 39,
+    "nombre": "Licea Trejo Samuel",
+    "escuela": "ITMAZ"
+  },
+  {
+    "id": 40,
+    "nombre": "Espinoza Calderon Paulina",
+    "escuela": "ICO"
+  }
+]

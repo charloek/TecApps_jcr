@@ -7,6 +7,8 @@ const btnAgregar = document.getElementById('btnAgregar');
 const tabla = document.getElementById('tabla');
 const tbody = document.getElementById('tbody');
 
+const pError = document.getElementById('pError');
+
 // declaracion de funcion
 
 function agregar(){
@@ -16,7 +18,7 @@ function agregar(){
     let escuela = txtEscuela.value;
 
     if(!id||!nombre||!escuela){
-        alert('Faltan datos por llenar');
+        mostrarError('Todos los campos son obligatorios', 5000);
         return;
     }
 
@@ -44,4 +46,14 @@ function agregar(){
     txtNombre.value = '';
 }
 
+function mostrarError(mensaje, tiempo){
+    pError.textContent = mensaje;
+
+    //funcion que recibe otra funcion y un valor entero
+    setTimeout(() => {
+        pError.textContent = ''; //limpiar el mensaje despues del tiempo
+    }, tiempo);
+}
+
+//asignacion de eventos
 btnAgregar.addEventListener('click', agregar);
