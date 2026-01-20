@@ -55,5 +55,37 @@ function mostrarError(mensaje, tiempo){
     }, tiempo);
 }
 
+function peticion(){
+    let url = "../alumnos.json";
+    fetch(url, { method: 'GET' })
+    .then( response => response.json() )
+    .then( data => {mostrarAlumnos(data)} )
+    .catch( error => {mostrarError(error, 5000)} );
+}
+
+function mostrarAlumnos(data){
+    data.forEach( alumno => {
+
+        //agregar elementos a una tabla dinamicamente
+        const fila = document.createElement('tr');
+
+        const c1 = document.createElement('td');
+              c1.textContent = alumno.id;
+              fila.appendChild(c1);
+
+        const c2 = document.createElement('td');
+              c2.textContent = alumno.nombre;
+              fila.appendChild(c2);
+
+        const c3 = document.createElement('td');
+              c3.textContent = alumno.escuela;
+              fila.appendChild(c3);
+
+        tbody.appendChild(fila);
+    });
+    tabla.appendChild(tbody);
+}
+
 //asignacion de eventos
 btnAgregar.addEventListener('click', agregar);
+document.addEventListener('DOMContentLoaded', peticion);
