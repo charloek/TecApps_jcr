@@ -55,12 +55,16 @@ function mostrarError(mensaje, tiempo){
     }, tiempo);
 }
 
-function peticion(){
+async function peticion(){
     let url = "../alumnos.json";
-    fetch(url, { method: 'GET' })
-    .then( response => response.json() )
-    .then( data => {mostrarAlumnos(data)} )
-    .catch( error => {mostrarError(error, 5000)} );
+    try{
+        const response = await fetch(url, { method: 'GET' });
+        const data = await response.json();
+        mostrarAlumnos(data);
+
+    }catch(error){
+        mostrarError(error, 5000);
+    }
 }
 
 function mostrarAlumnos(data){
@@ -86,6 +90,26 @@ function mostrarAlumnos(data){
     tabla.appendChild(tbody);
 }
 
+function otraTarea(){
+    mostrarError('Iniciando otra tarea', 5000);
+
+    //agregar 40 filas a la tabla
+    for(let con=0; con<=40; con++){
+        const fila = document.createElement('tr');
+
+        const c1 = document.createElement('td');
+        c1.textContent = con;
+        fila.appendChild(c1);
+        tbody.appendChild(fila);
+    }
+    tabla.appendChild(tbody);
+}
+
+async function main(){
+    await peticion(); //aqui se espera a que termine la peticion
+    otraTarea(); //esta funcion se ejecuta despues de la peticion
+}
+
 //asignacion de eventos
 btnAgregar.addEventListener('click', agregar);
-document.addEventListener('DOMContentLoaded', peticion);
+document.addEventListener('DOMContentLoaded', main);

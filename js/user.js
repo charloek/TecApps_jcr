@@ -60,7 +60,7 @@ function mandarError(mensaje, tiempo){
 }
 
 function peticionUser(){
-    let url = "../todos.json";
+    let url = "https://jsonplaceholder.typicode.com/todos";
     fetch(url, { method: 'GET' })
     .then( response => response.json() )
     .then( data => {mostrarUsers(data)} )
