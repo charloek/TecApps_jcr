@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API welcome to TheCocktailDB</title>
+    <title>Pre Examen: Unidad 01</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
@@ -20,7 +20,7 @@
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" href="/index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -35,8 +35,8 @@
                             <a class="nav-link" href="/html/bebidas.html">practica 03: API welcome to TheCocktailDB</a>
                         </li>
 
-                            <li class="nav-item">
-                            <a class="nav-link " href="/html/pre.html">Pre Examen: Unidad 01</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/html/pre.html">Pre Examen: Unidad 01</a>
                         </li>
                     </ul>
                     
@@ -49,38 +49,45 @@
         </nav>
 
         <center>
-            <h1>Welcome to TheCocktailDB API</h1>
-            <h2>Bebidas no alcoholicas</h2>
+            <div  class="bg-secondary text-white">
+                <h1>Vendedores</h1>
+            </div>
         </center>
     </header>
 
-    <main>
-
+    <main class="container py-4">
         <section>
-            <p id="pError" style="color: red; text-align: center;">*</p>
-            <hr>
-            <select name="tipo" id="tipo" class="form-select" aria-label="Default select example">
-                <option value="1">No alcoholicas</option>
-                <option value="2">Alcoholicas</option>
-                <option value="3">Todas</option>
-            </select>
-            <button id="btnSeleccionar" type="button" class="btn btn-outline-primary">Listar</button>
-            <p id="contador" class="mt-2 mb-0">Total: 0</p>
-            <hr>
+            <center>
+                <p id="pError" style="color: red; border: 1px solid green; text-align: center; max-width: 360px; padding: 6px; margin-bottom: 16px;">*</p>
 
-            <table id="tabla" class="table table-striped">
-                <thead>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Imagen</th>
-                </thead>
-                <tbody id="tbody">
-                    <!-- Generar renglones dinamicos lista de bebidas no alcoholicas -->
-                </tbody>
-            </table>
+                <div class="card mb-3" style="max-width: 360px;">
+                    <div class="card-body">
+                        <label for="inputId" class="form-label">ID</label>
+                        <input type="number" id="inputId" placeholder="ID" class="form-control mb-3">
+                        <button type="button" id="btnMostrar" class="btn btn-primary w-100">Mostrar</button>
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 360px;">
+                    <div class="card-body">
+                        <label class="form-label">Nombre</label>
+                        <input id="nombreValue" class="form-control mb-2" readonly>
+
+                        <label class="form-label">Nombre Usuario</label>
+                        <input id="usuarioValue" class="form-control mb-2" readonly>
+
+                        <label class="form-label">Email</label>
+                        <input id="emailValue" class="form-control mb-2" readonly>
+
+                        <label class="form-label">Domicilio</label>
+                        <input id="calleValue" class="form-control mb-2" readonly>
+                        <input id="cpValue" class="form-control mb-2" readonly>
+                        <input id="ciudadValue" class="form-control" readonly>
+                    </div>
+                </div>
+            </center>
         </section>
-
-        <script src="../js/bebidas.js"></script>
     </main>
 </body>
+<script src="/js/pre.js"></script>
 </html>
