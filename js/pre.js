@@ -47,12 +47,23 @@ function peticionVendedor(){
     //hacer peticion
     let url = "https://jsonplaceholder.typicode.com/users/" + id;
     fetch(url, { method: 'GET' })
-    .then( response => response.json() )
-    .then( data => {
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Usuario no encontrado');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (!data || !data.id) {
+            throw new Error('Usuario no encontrado');
+        }
         limpiarCampos();
         mostrarVendedor(data);
-    } )
-    .catch( error => {mandarError('Error: Usuario no encontrado', 5000)} );
+    })
+    .catch(() => {
+        limpiarCampos();
+        mandarError('Error: Usuario no encontrado', 5000);
+    });
 }
 
 //asignacion de eventos
