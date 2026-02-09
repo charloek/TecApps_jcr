@@ -82,13 +82,13 @@ async function verImagen(){
 
 function limpiar(){
     comboBreeds.value = "";
-    imagesDiv.innerHTML = '<p style="padding: 150px; font-size: 50px; font-style: italic;">DOG API</p>';
+    imagesDiv.innerHTML = '<img src="/assets/DogApi.png" alt="Dog API">';
     pError.textContent = '*';
     console.log("Imagen limpiada");
 }
 
 async function main(){
-    imagesDiv.innerHTML = '<p style="padding: 150px; font-size: 50px; font-style: italic;">DOG API</p>';
+    imagesDiv.innerHTML = '<img src="/assets/DogApi.png" alt="Dog API">';
     await peticion();
 }
 
