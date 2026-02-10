@@ -69,7 +69,7 @@ async function verImagen(){
         const data = await response.json();
 
         if(data.status === 'success'){
-            imagesDiv.innerHTML = '<img src="' + data.message + '">'; // en data.message tenemos la URL de la imagen
+            imagesDiv.innerHTML = '<img src="' + data.message + '" alt="Imagen de perro">'; // en data.message tenemos la URL de la imagen
             pError.textContent = '*';
         }else{
             mostrarError('No se encontro la imagen', 5000);
@@ -82,13 +82,13 @@ async function verImagen(){
 
 function limpiar(){
     comboBreeds.value = "";
-    imagesDiv.innerHTML = '<img src="/assets/DogApi.png" alt="Dog API">';
+    imagesDiv.innerHTML = '<img src="./assets/DogApi.png" alt="Dog API">';
     pError.textContent = '*';
     console.log("Imagen limpiada");
 }
 
 async function main(){
-    imagesDiv.innerHTML = '<img src="/assets/DogApi.png" alt="Dog API">';
+    imagesDiv.innerHTML = '<img src="./assets/DogApi.png" alt="Dog API">';
     await peticion();
 }
 
